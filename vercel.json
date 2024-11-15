@@ -1,18 +1,10 @@
-
-
+// vercel.json
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node-builder",
-      "config": {
-        "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "npm run build",
-        "outputDirectory": "build"
-      }
-    }
-  ],
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "create-react-app",
+  "outputDirectory": "build",
   "routes": [
     {
       "src": "/static/(.*)",
@@ -27,12 +19,12 @@
       "dest": "/manifest.json"
     },
     {
-      "src": "/logo192.png",
-      "dest": "/logo192.png"
-    },
-    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "CI": "false",
+    "NODE_ENV": "production"
+  }
 }
