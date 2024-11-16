@@ -1,6 +1,8 @@
 
+
+// Click "Add file" -> "Create new file"
+// Name it: vercel.json
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "installCommand": "npm install --legacy-peer-deps",
   "framework": "create-react-app",
