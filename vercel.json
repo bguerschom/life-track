@@ -1,7 +1,6 @@
 
 
-// Click "Add file" -> "Create new file"
-// Name it: vercel.json
+
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install --legacy-peer-deps",
