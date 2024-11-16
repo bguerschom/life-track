@@ -16,8 +16,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "cache": {
-    "node_modules": true
-  }
+  ]
 }
